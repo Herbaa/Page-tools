@@ -1,0 +1,32 @@
+{
+  "name": "chrome-extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build src/js/main.js -d src/build/ -o main.js --no-source-maps",
+    "watch": "parcel watch src/js/main.js -d src/build/ -o main.js --no-source-maps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Herbaa/Chrome-extension.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Herbaa/Chrome-extension/issues"
+  },
+  "homepage": "https://github.com/Herbaa/Chrome-extension#readme",
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.2",
+    "@babel/preset-react": "^7.28.5",
+    "parcel": "^2.16.4"
+  }
+}
