@@ -1,11 +1,11 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
 
   "name": "Page Tools",
   "description": "Анализ страницы и быстрый переводчик текста",
   "version": "1.0",
 
-  "browser_action": {
+  "action": {
     "default_icon": "icon.png",
     "default_popup": "src/popup.html"
   },
@@ -19,8 +19,7 @@
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
-      "js": ["src/build/main.js"],
-      "css": ["src/build/main.css"]
+      "js": ["index.js"]
     }
   ]
 }

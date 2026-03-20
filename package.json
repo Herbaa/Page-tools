@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "browserslist": "last 1 Chrome version",
   "scripts": {
-    "build": "parcel build src/js/main.js -d src/build/ -o main.js --no-source-maps",
-    "watch": "parcel watch src/js/main.js -d src/build/ -o main.js --no-source-maps"
+    "build": "npx webpack",
+    "watch": "npx webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -14,7 +15,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/Herbaa/Chrome-extension/issues"
   },
@@ -27,6 +27,8 @@
     "@babel/core": "^7.29.0",
     "@babel/preset-env": "^7.29.2",
     "@babel/preset-react": "^7.28.5",
-    "parcel": "^2.16.4"
+    "babel-loader": "^10.1.1",
+    "webpack": "^5.105.4",
+    "webpack-cli": "^7.0.2"
   }
 }
