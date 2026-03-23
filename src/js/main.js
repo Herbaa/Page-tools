@@ -1,12 +1,19 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client'
 import InfoPanel from './components/InfoPanel'
+import Translator from './components/Translator'
 
 chrome.runtime.onMessage.addListener((request, sender, response) => {
   if (request.action === 'showInfo') {
     injectComponent('page-tools-info', <InfoPanel />)
     response({ success: true })
   }
+
+  if (request.action === 'showTranslator') {
+    injectComponent('page-tools-translator', <Translator />)
+    response({ success: true });
+  }
+
 })
 
 function injectComponent(id, component) {
