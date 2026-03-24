@@ -37,3 +37,6 @@ npm run build
 2. Открыть `chrome://extensions`
 3. Включить **режим разработчика**
 4. Нажать **"Загрузить распакованное"** и выбрать папку
+
+### Code Climate Badge
+[![Maintainability](https://qlty.sh/gh/Herbaa/projects/Page-tools/maintainability.svg)](https://qlty.sh/gh/Herbaa/projects/Page-tools)
